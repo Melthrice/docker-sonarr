@@ -16,7 +16,7 @@ RUN \
   echo "**** install packages ****" && \
   apt-get update && \
   apt-get install -y \
-    jq && \
+    jq ffmpeg youtube-dl && \
   echo "**** install sonarr ****" && \
   mkdir -p /app/sonarr/bin && \
   if [ -z ${SONARR_VERSION+x} ]; then \
